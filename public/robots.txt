@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://giats.me/
+Host: https://monarch-creative-studio.vercel.app/
 
 # Sitemaps
-Sitemap: https://giats.me/sitemap.xml
+Sitemap: https://monarch-creative-studio.vercel.app/sitemap.xml

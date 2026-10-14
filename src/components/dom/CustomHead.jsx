@@ -7,19 +7,13 @@ const OG_IMAGE = `${SITE_URL}/og.png`;
 
 const getSchema = () => ({
   '@context': 'http://schema.org',
-  '@type': 'Person',
+  '@type': 'CreativeWork',
   name: 'Monarch Creative Studio',
-  jobTitle: 'Senior Frontend Developer',
+  description: 'Creative digital agency concept',
   url: SITE_URL,
   image: OG_IMAGE,
-  email: 'mailto:vaggelisgiats@gmail.com',
-  sameAs: ['https://www.linkedin.com/in/giats/', 'https://github.com/Giats2498', 'https://twitter.com/Giats_', 'https://www.instagram.com/giats_/'],
-  alumniOf: [
-    { '@type': 'Organization', name: 'Company 1' },
-    { '@type': 'Organization', name: 'Company 2' },
-    { '@type': 'Organization', name: 'Company 3' },
-    { '@type': 'Organization', name: 'Company 4' },
-  ],
+
+  sameAs: ['https://github.com/zoeyzb/monarch-creative-studio'],
 });
 
 function CustomHead({ title = '', description, keywords }) {

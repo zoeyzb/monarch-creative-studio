@@ -1,6 +1,5 @@
 import { useMemo, useRef } from 'react';
 
-import Image from 'next/image';
 import clsx from 'clsx';
 import { gsap } from 'gsap';
 import styles from '@src/pages/about/components/hero/styles/hero.module.scss';
@@ -52,7 +51,14 @@ function Hero() {
       </header>
       <div className={styles.wrapper}>
         <div ref={heroImageRef} className={styles.imageContainer}>
-          <Image priority quality={100} src="/giats/back.webp" sizes="100%" fill alt="Evangelos Giatsidis Back" />
+          <div
+            aria-label="Abstract Monarch visual"
+            style={{
+              position: 'absolute',
+              inset: 0,
+              background: 'radial-gradient(ellipse at center, #6a648c, #15141e 67%)',
+            }}
+          />
         </div>
       </div>
     </section>

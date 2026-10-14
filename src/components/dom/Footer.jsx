@@ -16,7 +16,9 @@ import { useStore } from '@src/store';
 import { useWindowSize } from '@darkroom.engineering/hamo';
 
 const Time = dynamic(() => import('@src/components/dom/Time'), { ssr: false });
-const GoTop = dynamic(() => import('@src/components/dom/GoTop'), { ssr: false });
+const GoTop = dynamic(() => import('@src/components/dom/GoTop'), {
+  ssr: false,
+});
 
 function Footer() {
   const isMobile = useIsMobile();
@@ -49,7 +51,10 @@ function Footer() {
               scroller: document?.querySelector('main'),
             });
           } else {
-            gsap.set(footerRef.current, { transform: 'translate(0%, 0%)', height: 'auto' });
+            gsap.set(footerRef.current, {
+              transform: 'translate(0%, 0%)',
+              height: 'auto',
+            });
           }
         }
       };
@@ -96,8 +101,8 @@ function Footer() {
           <h4 className={clsx(styles.workWithMe, 'h4')}>Work With Me:</h4>
           <div>
             <div className={styles.link}>
-              <Link aria-label="Send email" scroll={false} href="mailto:vaggelisgiats@gmail.com">
-                <h4 className={clsx(styles.email, 'h4')}>vaggelisgiats@gmail.com</h4>
+              <Link aria-label="Send email" scroll={false} href="https://github.com/zoeyzb/monarch-creative-studio">
+                <h4 className={clsx(styles.email, 'h4')}>VIEW GITHUB REPOSITORY</h4>
               </Link>
               {/* class="link__graphic link__graphic--slide" */}
               <svg className={clsx(styles.linkGraphic)} width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
@@ -123,9 +128,15 @@ function Footer() {
           <div className={clsx('p-x', styles.middleText)}>Currently available for limited projects</div>
         </AppearTitle>
       </div>
-      <div className={styles.middleContainer} style={{ gridColumn: '13 / 17', textAlign: isMobile ? 'left' : 'right' }}>
+      <div
+        className={styles.middleContainer}
+        style={{
+          gridColumn: '13 / 17',
+          textAlign: isMobile ? 'left' : 'right',
+        }}
+      >
         <AppearTitle isFooter>
-          <div className="p-x">© 2025 · Evangelos Giatsidis</div>
+          <div className="p-x">© 2026 · Monarch Creative Studio · Concept</div>
           <div className={clsx('p-x', styles.middleText)}>All Rights Reserved</div>
         </AppearTitle>
       </div>

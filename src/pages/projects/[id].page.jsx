@@ -86,7 +86,7 @@ function Page({ id }) {
         `${currentProject.title} project`,
         `${currentProject.title} development`,
         `${currentProject.company} collaboration`,
-        `Evangelos Giatsidis ${currentProject.title}`,
+        `Monarch Creative Studio ${currentProject.title}`,
         `Giats ${currentProject.title}`,
         `Frontend development ${currentProject.title}`,
         `Responsive design ${currentProject.title}`,

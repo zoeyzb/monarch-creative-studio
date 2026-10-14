@@ -11,8 +11,8 @@ const seo = {
   description:
     'Self-taught front-end developer from Greece, crafting sleek and efficient web, desktop, and mobile apps. Combining creativity and technical skill to deliver innovative user-centric solutions.',
   keywords: [
-    'Giats',
-    'Evangelos Giatsidis',
+    'Monarch',
+    'Monarch Creative Studio',
     'Frontend',
     'Engineer',
     'Portfolio',

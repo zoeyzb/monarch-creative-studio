@@ -9,8 +9,8 @@ const seo = {
   title: 'Monarch - About',
   description: 'Learn about my journey, values, and commitment to quality web and app solutions.',
   keywords: [
-    'Giats',
-    'About Evangelos Giatsidis',
+    'Monarch',
+    'About Monarch Creative Studio',
     'About me',
     'Frontend Developer Journey',
     'Web Developer Story',

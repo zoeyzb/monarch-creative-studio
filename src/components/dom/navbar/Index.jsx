@@ -48,7 +48,7 @@ function Navbar() {
           </Link>
 
           <div className={styles.rightContainer}>
-            {!isMobile && <ButtonLink href="mailto:vaggelisgiats@gmail.com" label="GET IN TOUCH" />}
+            {!isMobile && <ButtonLink href="https://github.com/zoeyzb/monarch-creative-studio" label="VIEW SOURCE" />}
             <MenuButton />
           </div>
         </div>

@@ -1,6 +1,5 @@
 import AppearTitle from '@src/components/animationComponents/appearTitle/Index';
 import ButtonLink from '@src/components/animationComponents/buttonLink/Index';
-import Image from 'next/image';
 import clsx from 'clsx';
 import { gsap } from 'gsap';
 import styles from '@src/pages/components/about/styles/about.module.scss';
@@ -42,7 +41,14 @@ function About() {
 
   const renderImageContainer = () => (
     <div className={styles.imageContainer}>
-      <Image priority src="/giats/front.webp" sizes="100%" fill alt="Evangelos Giatsidis" />
+      <div
+        aria-label="Monarch abstract studio artwork"
+        style={{
+          position: 'absolute',
+          inset: 0,
+          background: 'radial-gradient(circle at 36% 32%, #9e8dff, #252438 42%, #0d1018 75%)',
+        }}
+      />
     </div>
   );
 
@@ -50,8 +56,8 @@ function About() {
     <section ref={rootRef} className={styles.root}>
       <div className={clsx(styles.nameContainer, 'layout-block-inner')}>
         <AppearTitle>
-          <h1 className={clsx('h1', 'medium')}>Hey, My name&apos;s</h1>
-          <h1 className={clsx('h1', 'medium')}>Evangelos Giatsidis!</h1>
+          <h1 className={clsx('h1', 'medium')}>Welcome to</h1>
+          <h1 className={clsx('h1', 'medium')}>Monarch Creative Studio</h1>
         </AppearTitle>
       </div>
 
@@ -59,17 +65,16 @@ function About() {
         {isMobile ? renderImageContainer() : null}
         <div className={clsx(styles.descWrapper)} ref={animatedImageRef}>
           <AppearTitle>
-            <div className="p-l">“My solo learning journey as a self-taught</div>
-            <div className="p-l">developer empowers me to solve problems</div>
-            <div className="p-l">creatively and efficiently, supporting the</div>
-            <div className="p-l">successful completion of your project goals”</div>
+            <div className="p-l">We explore expressive websites, art direction,</div>
+            <div className="p-l">motion systems and immersive experiences</div>
+            <div className="p-l">designed to make the digital feel physical.</div>
           </AppearTitle>
         </div>
         {!isMobile ? renderImageContainer() : null}
         <div className={clsx(styles.descWrapperBottom)}>
           {!isMobile ? (
             <AppearTitle key="desktop-descWrapperBottom">
-              <h6 className="h6">A passionate front-end developer hailing from Greece.</h6>
+              <h6 className="h6">An experimental digital studio concept.</h6>
               <h6 className="h6">With a strong eye for design and a dedication to</h6>
               <h6 className="h6">creating seamless user experiences. I specialize in</h6>
               <h6 className="h6">bringing web applications to life with clean and efficient</h6>
@@ -77,7 +82,7 @@ function About() {
             </AppearTitle>
           ) : (
             <AppearTitle key="mobile-descWrapperBottom">
-              <h6 className="h6"> A passionate front-end developer hailing from Greece. With a</h6>
+              <h6 className="h6"> An experimental digital studio concept. With a</h6>
               <h6 className="h6">strong eye for design and a dedication to creating seamless</h6>
               <h6 className="h6">user experiences. I specialize in bringing web applications to life</h6>
               <h6 className="h6">with clean and efficient code.</h6>

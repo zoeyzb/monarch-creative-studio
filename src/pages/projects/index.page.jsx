@@ -19,7 +19,7 @@ const seo = {
   title: 'Monarch - Projects',
   description: 'Explore my portfolio to see a range of frontend projects, from responsive websites to web applications. Discover my work with React, Nextjs, React three fiber, Electron and more.',
   keywords: [
-    'Giats Projects',
+    'Monarch Projects',
     'Portfolio Showcase',
     'Frontend Development Examples',
     'Web Design Portfolio',
@@ -32,7 +32,7 @@ const seo = {
     'React Three Fiber Projects',
     'Electron Projects',
     'Professional Web Development',
-    'Evangelos Giatsidis Projects',
+    'Monarch Creative Studio Projects',
   ],
 };
 
