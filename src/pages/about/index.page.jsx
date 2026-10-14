@@ -6,7 +6,7 @@ import Process from '@src/pages/about/components/process/Process';
 import CustomHead from '@src/components/dom/CustomHead';
 
 const seo = {
-  title: 'Giats - About',
+  title: 'Monarch - About',
   description: 'Learn about my journey, values, and commitment to quality web and app solutions.',
   keywords: [
     'Giats',

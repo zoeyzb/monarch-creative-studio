@@ -80,7 +80,7 @@ function Page({ id }) {
 
   const seo = useMemo(
     () => ({
-      title: `Giats - ${currentProject.title} Project`,
+      title: `Monarch - ${currentProject.title} Project`,
       description: `Check out my work on the ${currentProject.title} project, collaborating with ${currentProject.company}, where I enhanced frontend development with responsive design and optimized user interactions.`,
       keywords: [
         `${currentProject.title} project`,

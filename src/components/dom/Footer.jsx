@@ -131,7 +131,7 @@ function Footer() {
       </div>
 
       <div className={styles.giats}>
-        <span>GIATS</span>
+        <span>MONARCH</span>
       </div>
       <div className={styles.goToTop}>
         <GoTop />
